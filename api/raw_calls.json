@@ -1,0 +1,196 @@
+{
+    "auth": "private_key_url",
+    "calls": {
+        "AAC": {
+            "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-LIST.md",
+            "initialized": true,
+            "method": "get",
+            "name": "USDA NDB API List",
+            "params": {
+                "AAE": {
+                    "key": "format",
+                    "private": true,
+                    "value": "json",
+                    "visibility": "hidden"
+                },
+                "AAG": {
+                    "key": "lt",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAH": {
+                    "key": "max",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAI": {
+                    "key": "offset",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAJ": {
+                    "key": "sort",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1499359806163x481016367934865400.plugin_api.AAC",
+            "types": "{\"plugin_api.AAC\":{\"caption\":\"USDA NDB List\",\"fields\":{\"_p_list.lt\":{\"ret_value\":\"text\",\"caption\":\"list lt\",\"path\":[\"list\",\"lt\"]},\"_p_list.start\":{\"ret_value\":\"number\",\"caption\":\"list start\",\"path\":[\"list\",\"start\"]},\"_p_list.end\":{\"ret_value\":\"number\",\"caption\":\"list end\",\"path\":[\"list\",\"end\"]},\"_p_list.total\":{\"ret_value\":\"number\",\"caption\":\"list total\",\"path\":[\"list\",\"total\"]},\"_p_list.sr\":{\"ret_value\":\"text\",\"caption\":\"list sr\",\"path\":[\"list\",\"sr\"]},\"_p_list.sort\":{\"ret_value\":\"text\",\"caption\":\"list sort\",\"path\":[\"list\",\"sort\"]},\"_p_list.item\":{\"ret_value\":\"list.api.1499359806163x481016367934865400.plugin_api.AAC.list.item\",\"caption\":\"list item\",\"path\":[\"list\",\"item\"]}}},\"plugin_api.AAC.list.item\":{\"caption\":\"USDA NDB List list item\",\"fields\":{\"_p_offset\":{\"ret_value\":\"number\",\"caption\":\"offset\",\"path\":[\"offset\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"path\":[\"id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"path\":[\"name\"]}}}}",
+            "url": "https://api.nal.usda.gov/ndb/list"
+        },
+        "AAR": {
+            "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md",
+            "initialized": true,
+            "method": "get",
+            "name": "USDA NDB API Food Report Version 1",
+            "params": {
+                "AAS": {
+                    "key": "ndbno",
+                    "private": true,
+                    "value": ""
+                },
+                "AAT": {
+                    "key": "type",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAU": {
+                    "key": "format",
+                    "optional": false,
+                    "private": true,
+                    "value": "json",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1499359806163x481016367934865400.plugin_api.AAR",
+            "types": "{\"plugin_api.AAR\":{\"caption\":\"Food Report Version 1\",\"fields\":{\"_p_report.sr\":{\"ret_value\":\"text\",\"caption\":\"report sr\",\"path\":[\"report\",\"sr\"]},\"_p_report.type\":{\"ret_value\":\"text\",\"caption\":\"report type\",\"path\":[\"report\",\"type\"]},\"_p_report.food.ndbno\":{\"ret_value\":\"text\",\"caption\":\"report food ndbno\",\"path\":[\"report\",\"food\",\"ndbno\"]},\"_p_report.food.name\":{\"ret_value\":\"text\",\"caption\":\"report food name\",\"path\":[\"report\",\"food\",\"name\"]},\"_p_report.food.ds\":{\"ret_value\":\"text\",\"caption\":\"report food ds\",\"path\":[\"report\",\"food\",\"ds\"]},\"_p_report.food.manu\":{\"ret_value\":\"text\",\"caption\":\"report food manu\",\"path\":[\"report\",\"food\",\"manu\"]},\"_p_report.food.ru\":{\"ret_value\":\"text\",\"caption\":\"report food ru\",\"path\":[\"report\",\"food\",\"ru\"]},\"_p_report.food.ing.desc\":{\"ret_value\":\"text\",\"caption\":\"report food ing desc\",\"path\":[\"report\",\"food\",\"ing\",\"desc\"]},\"_p_report.food.ing.upd\":{\"ret_value\":\"date\",\"caption\":\"report food ing upd\",\"path\":[\"report\",\"food\",\"ing\",\"upd\"]},\"_p_report.food.nutrients\":{\"ret_value\":\"list.api.1499359806163x481016367934865400.plugin_api.AAR.report.food.nutrients\",\"caption\":\"report food nutrients\",\"path\":[\"report\",\"food\",\"nutrients\"]}}},\"plugin_api.AAR.report.food.nutrients\":{\"caption\":\"Food Report Version 1 report food nutrient\",\"fields\":{\"_p_nutrient_id\":{\"ret_value\":\"text\",\"caption\":\"nutrient_id\",\"path\":[\"nutrient_id\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"path\":[\"name\"]},\"_p_derivation\":{\"ret_value\":\"text\",\"caption\":\"derivation\",\"path\":[\"derivation\"]},\"_p_group\":{\"ret_value\":\"text\",\"caption\":\"group\",\"path\":[\"group\"]},\"_p_unit\":{\"ret_value\":\"text\",\"caption\":\"unit\",\"path\":[\"unit\"]},\"_p_value\":{\"ret_value\":\"text\",\"caption\":\"value\",\"path\":[\"value\"]},\"_p_measures\":{\"ret_value\":\"list.api.1499359806163x481016367934865400.plugin_api.AAR.measures\",\"caption\":\"measures\",\"path\":[\"measures\"]}}},\"plugin_api.AAR.measures\":{\"caption\":\"Food Report Version 1 measure\",\"fields\":{\"_p_label\":{\"ret_value\":\"text\",\"caption\":\"label\",\"path\":[\"label\"]},\"_p_eqv\":{\"ret_value\":\"number\",\"caption\":\"eqv\",\"path\":[\"eqv\"]},\"_p_eunit\":{\"ret_value\":\"text\",\"caption\":\"eunit\",\"path\":[\"eunit\"]},\"_p_qty\":{\"ret_value\":\"number\",\"caption\":\"qty\",\"path\":[\"qty\"]},\"_p_value\":{\"ret_value\":\"text\",\"caption\":\"value\",\"path\":[\"value\"]}}}}",
+            "url": "https://api.nal.usda.gov/ndb/reports"
+        },
+        "AAZ": {
+            "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-NUTRIENT-REPORT.md",
+            "initialized": true,
+            "method": "get",
+            "name": "USDA NDB API Nutrient Report",
+            "params": {
+                "AAa": {
+                    "key": "fg",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAb": {
+                    "key": "format",
+                    "private": true,
+                    "value": "json",
+                    "visibility": "hidden"
+                },
+                "AAc": {
+                    "key": "max",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAd": {
+                    "key": "offset",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAe": {
+                    "key": "ndbno",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAf": {
+                    "key": "nutrients",
+                    "private": true,
+                    "value": ""
+                },
+                "AAg": {
+                    "key": "sort",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAh": {
+                    "key": "subset",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1499359806163x481016367934865400.plugin_api.AAZ",
+            "types": "{\"plugin_api.AAZ\":{\"caption\":\"USDA NDB API Nutrient Report\",\"fields\":{\"_p_report.sr\":{\"ret_value\":\"text\",\"caption\":\"report sr\",\"path\":[\"report\",\"sr\"]},\"_p_report.groups\":{\"ret_value\":\"text\",\"caption\":\"report groups\",\"path\":[\"report\",\"groups\"]},\"_p_report.subset\":{\"ret_value\":\"text\",\"caption\":\"report subset\",\"path\":[\"report\",\"subset\"]},\"_p_report.end\":{\"ret_value\":\"number\",\"caption\":\"report end\",\"path\":[\"report\",\"end\"]},\"_p_report.start\":{\"ret_value\":\"number\",\"caption\":\"report start\",\"path\":[\"report\",\"start\"]},\"_p_report.total\":{\"ret_value\":\"number\",\"caption\":\"report total\",\"path\":[\"report\",\"total\"]},\"_p_report.foods\":{\"ret_value\":\"list.api.1499359806163x481016367934865400.plugin_api.AAZ.report.foods\",\"caption\":\"report foods\",\"path\":[\"report\",\"foods\"]}}},\"plugin_api.AAZ.report.foods\":{\"caption\":\"USDA NDB API Nutrient Report report food\",\"fields\":{\"_p_ndbno\":{\"ret_value\":\"text\",\"caption\":\"ndbno\",\"path\":[\"ndbno\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"path\":[\"name\"]},\"_p_weight\":{\"ret_value\":\"number\",\"caption\":\"weight\",\"path\":[\"weight\"]},\"_p_measure\":{\"ret_value\":\"text\",\"caption\":\"measure\",\"path\":[\"measure\"]},\"_p_nutrients\":{\"ret_value\":\"list.api.1499359806163x481016367934865400.plugin_api.AAZ.nutrients\",\"caption\":\"nutrients\",\"path\":[\"nutrients\"]}}},\"plugin_api.AAZ.nutrients\":{\"caption\":\"USDA NDB API Nutrient Report nutrient\",\"fields\":{\"_p_nutrient_id\":{\"ret_value\":\"text\",\"caption\":\"nutrient_id\",\"path\":[\"nutrient_id\"]},\"_p_nutrient\":{\"ret_value\":\"text\",\"caption\":\"nutrient\",\"path\":[\"nutrient\"]},\"_p_unit\":{\"ret_value\":\"text\",\"caption\":\"unit\",\"path\":[\"unit\"]},\"_p_value\":{\"ret_value\":\"text\",\"caption\":\"value\",\"path\":[\"value\"]},\"_p_gm\":{\"ret_value\":\"number\",\"caption\":\"gm\",\"path\":[\"gm\"]}}}}",
+            "url": "https://api.nal.usda.gov/ndb/nutrients"
+        },
+        "AAi": {
+            "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-SEARCH.md",
+            "initialized": true,
+            "method": "get",
+            "name": "USDA NDB API Search",
+            "params": {
+                "AAj": {
+                    "key": "q",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAk": {
+                    "key": "ds",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAl": {
+                    "key": "fg",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAm": {
+                    "key": "sort",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAn": {
+                    "key": "max",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAo": {
+                    "key": "offset",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AAp": {
+                    "key": "format",
+                    "private": true,
+                    "value": "json",
+                    "visibility": "hidden"
+                }
+            },
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1499359806163x481016367934865400.plugin_api.AAi",
+            "types": "{\"plugin_api.AAi\":{\"caption\":\"USDA NDB API Search\",\"fields\":{\"_p_list.q\":{\"ret_value\":\"text\",\"caption\":\"list q\",\"path\":[\"list\",\"q\"]},\"_p_list.sr\":{\"ret_value\":\"text\",\"caption\":\"list sr\",\"path\":[\"list\",\"sr\"]},\"_p_list.ds\":{\"ret_value\":\"text\",\"caption\":\"list ds\",\"path\":[\"list\",\"ds\"]},\"_p_list.start\":{\"ret_value\":\"number\",\"caption\":\"list start\",\"path\":[\"list\",\"start\"]},\"_p_list.end\":{\"ret_value\":\"number\",\"caption\":\"list end\",\"path\":[\"list\",\"end\"]},\"_p_list.total\":{\"ret_value\":\"number\",\"caption\":\"list total\",\"path\":[\"list\",\"total\"]},\"_p_list.group\":{\"ret_value\":\"text\",\"caption\":\"list group\",\"path\":[\"list\",\"group\"]},\"_p_list.sort\":{\"ret_value\":\"text\",\"caption\":\"list sort\",\"path\":[\"list\",\"sort\"]},\"_p_list.item\":{\"ret_value\":\"list.api.1499359806163x481016367934865400.plugin_api.AAi.list.item\",\"caption\":\"list item\",\"path\":[\"list\",\"item\"]}}},\"plugin_api.AAi.list.item\":{\"caption\":\"USDA NDB API Search list item\",\"fields\":{\"_p_offset\":{\"ret_value\":\"number\",\"caption\":\"offset\",\"path\":[\"offset\"]},\"_p_group\":{\"ret_value\":\"text\",\"caption\":\"group\",\"path\":[\"group\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"path\":[\"name\"]},\"_p_ndbno\":{\"ret_value\":\"text\",\"caption\":\"ndbno\",\"path\":[\"ndbno\"]},\"_p_ds\":{\"ret_value\":\"text\",\"caption\":\"ds\",\"path\":[\"ds\"]}}}}",
+            "url": "https://api.nal.usda.gov/ndb/search"
+        }
+    },
+    "human": "USDA NDB API",
+    "token_param_name": "api_key"
+}
