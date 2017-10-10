@@ -5,7 +5,7 @@
             "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-LIST.md",
             "initialized": true,
             "method": "get",
-            "name": "USDA NDB API List",
+            "name": "List",
             "params": {
                 "AAE": {
                     "key": "format",
@@ -48,12 +48,12 @@
             "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-FOOD-REPORT.md",
             "initialized": true,
             "method": "get",
-            "name": "USDA NDB API Food Report Version 1",
+            "name": "Food Report Version 1",
             "params": {
                 "AAS": {
                     "key": "ndbno",
                     "private": true,
-                    "value": "01001"
+                    "value": ""
                 },
                 "AAT": {
                     "key": "type",
@@ -80,7 +80,7 @@
             "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-NUTRIENT-REPORT.md",
             "initialized": true,
             "method": "get",
-            "name": "USDA NDB API Nutrient Report",
+            "name": "Nutrient Report",
             "params": {
                 "AAa": {
                     "key": "fg",
@@ -140,7 +140,7 @@
             "doc_link": "https://ndb.nal.usda.gov/ndb/doc/apilist/API-SEARCH.md",
             "initialized": true,
             "method": "get",
-            "name": "USDA NDB API Search",
+            "name": "Search",
             "params": {
                 "AAj": {
                     "key": "q",
